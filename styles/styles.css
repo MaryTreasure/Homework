@@ -1,0 +1,222 @@
+@font-face {
+    font-family: 'Darker Grotesque';
+    src:local(DarkerGrotesque-SemiBold), 
+    url('../fonts/DarkerGrotesque-SemiBold.woff2') format('woff2'),
+        url('../fonts/DarkerGrotesque-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Darker Grotesque';
+    src: local(DarkerGrotesque-Regular) 
+    url('../fonts/DarkerGrotesque-Regular.woff2'), format('woff2'),
+        url('../fonts/DarkerGrotesque-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Darker Grotesque';
+    src: url('../fonts/DarkerGrotesque-Medium.woff2') format('woff2'),
+        url('../fonts/DarkerGrotesque-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('../fonts/JosefinSans-Regular.woff2') format('woff2'),
+        url('../fonts/JosefinSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+body {
+    font-family: 'Darker Grotesque', sans-serif;
+    background-color: #121521;
+    color: #fff;
+    line-height: 130%;
+    margin: 0;   
+}
+h1,
+h2,
+h3 {
+    font-weight: 400;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.container {
+    width: 1240px;
+    margin: auto;
+}
+.d-flex {
+    display: flex;
+}
+.flex-sb {
+    justify-content: space-between;
+}
+.f-size-twenty {
+    font-size: 20px;
+}
+.upercase {
+    text-transform: uppercase;
+}
+p {
+    color: #B2B2D3;
+}
+.d-grid {
+    display: grid;
+}
+/*
+================================
+Верхнее меню
+================================
+*/
+.header-menu {
+    height: 141px;
+    align-items: center;
+}
+.main-menu--decor {
+    list-style: none;
+}
+.main-menu__item--decor {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+.navigation {
+    width: 706px;
+}
+/*
+================================
+Блок "Rooftop cinema"
+================================
+*/
+.main-block {
+    overflow: hidden;
+}
+.main-block-cont {
+    height: 750px;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+}
+.main-block__img-box {
+    position: absolute;
+    right: -340px;
+    top: 0;
+}
+.main-text {
+    width: 455px;
+}
+.main-text__heading {
+    font-size: 60px;
+    margin: 60px 0 30px 0;
+}
+.main-text__slogan {
+    font-size: 32px;
+    line-height: 130%;
+    width: 320px;
+}
+.buttons {
+    width: 410px;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.buttons__item {
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 17px;
+}
+.buttons__item--filled {
+    width: 176px;
+    height: 59px;
+    background: #40467C;
+    border: #40467C 2px solid;
+}
+.buttons__item--filled:hover {
+content: "";
+background: #51578C;
+}
+.buttons__item--border {
+    width: 204px;
+    height: 59px;
+    border: #fff 2px solid;
+}
+/*
+================================
+Блок "Open-air film experience"
+================================
+*/
+.video-block {
+    width: 1242px;
+    height: 524px;
+    background: #1B213A;
+    margin-top: 119px;
+}
+.video-block__left {
+    width: 555px;
+    height: 405px;
+    margin-top: 55px;
+    margin-right: 40px;
+}
+.video-block__text {
+    grid-template-columns: 275px 275px;
+    gap: 30px;
+}
+.video-block__heading {
+    font-size: 46px;
+    width: 427px;
+    height: 98px;
+    margin: 0;
+    line-height: 46px;
+}
+.video-block__item-heading {
+    font-size: 28px;
+    line-height: 100%;
+    margin: 30px 0 0 0;
+}
+.video-block__item-heading--bot {
+    height: 60px;
+}
+.video-block__item-text {
+    font-size: 20px;
+    line-height: 130%;
+    margin-bottom: 0;
+    width: 270px;
+}
+.video-block__btn {
+    z-index: 50;
+    position: absolute;
+    width: 57.04px;
+    height: 60px;
+    background: #40467C;
+    top: 232px;
+    left: 274px;
+}
+.video-block__poster {
+    z-index: 0;
+}
+.video-block__overlay {
+    position: relative;
+}
+.video-block__overlay::before {
+    content: "";
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background: linear-gradient(0deg, rgba(20, 25, 35, 0.6) 31.25%, rgba(20, 25, 35, 0) 100%);
+}
+.video-block__btn-play {
+    position: absolute;
+    margin: auto;
+    top: 18px;
+    left: 22px;
+}
